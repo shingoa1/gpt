@@ -20,6 +20,10 @@ body {
   margin: 0;
 }
 
+dev {
+  margin-left: 10px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
