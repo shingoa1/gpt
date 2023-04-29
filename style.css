@@ -44,8 +44,9 @@ header h1 {
 header nav {
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
+  align-items: center;
 }
+
 
 header nav a {
   color: #ffffff;
