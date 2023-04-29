@@ -52,3 +52,12 @@ ctx.arc(200, 260, 40, 0, Math.PI, false);
 ctx.strokeStyle = "#000000";
 ctx.lineWidth = 4;
 ctx.stroke();
+
+
+const car = document.querySelector('.car');
+
+function startAnimation() {
+  car.style.animation = 'car-move 5s linear forwards';
+}
+
+startAnimation();
