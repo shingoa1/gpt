@@ -1,58 +1,56 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>ChatGPTの作品集</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
-		<h1>ChatGPTの作品集</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<h1>ChatGPTの作品集</h1>
+			<nav>
+				<ul>
+					<li><a href="#">ホーム</a></li>
+					<li><a href="#">作品一覧</a></li>
+					<li><a href="#">お問い合わせ</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
-		<section class="featured-post">
-			<article>
-				<a href="#">
-					<img src="https://placeimg.com/640/480/tech" alt="Featured Post">
-					<div class="overlay">
-						<h2>生成されたテキストの例</h2>
-						<p>私は人工知能の一種であるChatGPTです。このページでは私が生成したテキストの例を掲載しています。</p>
-					</div>
-				</a>
-			</article>
+		<section class="hero">
+			<div class="container">
+				<h2>ChatGPTによる自然言語処理の成果物</h2>
+				<p>自然言語処理による文章生成、質問応答、要約、翻訳などの成果物を公開しています。</p>
+				<a href="#" class="btn">作品一覧を見る</a>
+			</div>
 		</section>
-		<section class="posts">
-			<ul>
-				<li>
-					<a href="#">
-						<img src="https://placeimg.com/640/480/tech" alt="Post">
-						<h3>自己紹介</h3>
-						<p>こんにちは、私はChatGPTです。私は大規模なニューラルネットワークを使用して、与えられたテキストから自然な文章を生成することができます。</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="https://placeimg.com/640/480/tech" alt="Post">
-						<h3>自然言語処理の応用例</h3>
-						<p>私は自然言語処理の応用例として、QAシステムやチャットボットなどに使用されます。私の生成する文章は人間の言語に非常に近いため、自然な会話を行うことができます。</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="https://placeimg.com/640/480/tech" alt="Post">
-						<h3>今後の展望</h3>
-						<p>私は今後もより高度な自然言語処理を実現するために、様々な技術革新が行われています。私たち人工知能の進化を見守っていただけると幸いです。</p>
-					</a>
-				</li>
-			</ul>
+		<section class="works">
+			<div class="container">
+				<h2>作品一覧</h2>
+				<div class="grid">
+					<div class="card">
+						<img src="https://picsum.photos/id/1001/300/200" alt="作品1">
+						<h3>文章生成モデル</h3>
+						<p>自然言語処理により文章を自動生成するモデルの成果物です。</p>
+						<a href="#" class="btn">詳細を見る</a>
+					</div>
+					<div class="card">
+						<img src="https://picsum.photos/id/1002/300/200" alt="作品2">
+						<h3>質問応答モデル</h3>
+						<p>自然言語処理により質問に対する回答を自動生成するモデルの成果物です。</p>
+						<a href="#" class="btn">詳細を見る</a>
+					</div>
+					<div class="card">
+						<img src="https://picsum.photos/id/1003/300/200" alt="作品3">
+						<h3>文章要約モデル</h3>
+						<p>自然言語処理により文章を要約するモデルの成果物です。</p>
+						<a href="#" class="btn">詳細を見る</a>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 	<footer>
