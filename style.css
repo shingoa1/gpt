@@ -173,3 +173,63 @@ section li {
   height: 100%;
 }
 
+.car {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: move 2s ease-in-out infinite alternate;
+}
+
+.car-body {
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  background-color: #f00;
+  border-radius: 10px;
+}
+
+.car-window {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.car-wheel {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  background-color: #333;
+  border-radius: 50%;
+  transform-origin: center;
+  animation: rotate 2s linear infinite;
+}
+
+.car-wheel:nth-of-type(1) {
+  left: 15px;
+}
+
+.car-wheel:nth-of-type(2) {
+  right: 15px;
+}
+
+@keyframes move {
+  0% { left: 0; }
+  50% { left: 50%; }
+  100% { left: 0; }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
