@@ -19,29 +19,44 @@
        </div>
      </header>
   <style>
-    #canvas {
+    canvas {
       border: 1px solid black;
+      background-color: #f2f2f2;
+      margin: 0 auto;
+      display: block;
     }
   </style>
 </head>
 <body>
   <canvas id="canvas"></canvas>
   <script>
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-    
-    // 車体
-    ctx.fillStyle = 'red';
-    ctx.fillRect(50, 100, 200, 50);
-    
-    // 車輪
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    // Draw car body
+    ctx.fillStyle = "#FFA500";
+    ctx.fillRect(75, 50, 150, 75);
+
+    // Draw wheels
     ctx.beginPath();
-    ctx.fillStyle = 'black';
-    ctx.arc(80, 155, 20, 0, Math.PI * 2);
+    ctx.arc(100, 125, 25, 0, Math.PI*2, true);
+    ctx.arc(200, 125, 25, 0, Math.PI*2, true);
+    ctx.fillStyle = "#000000";
     ctx.fill();
-    
+
+    // Draw windows
+    ctx.fillStyle = "#ADD8E6";
+    ctx.fillRect(95, 55, 55, 40);
+    ctx.fillRect(150, 55, 25, 25);
+
+    // Draw door
+    ctx.fillStyle = "#FFA500";
+    ctx.fillRect(140, 85, 40, 40);
+
+    // Draw steering wheel
     ctx.beginPath();
-    ctx.arc(220, 155, 20, 0, Math.PI * 2);
+    ctx.arc(120, 65, 10, 0, Math.PI*2, true);
+    ctx.fillStyle = "#000000";
     ctx.fill();
   </script>
 </body>
