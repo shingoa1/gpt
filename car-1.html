@@ -2,29 +2,12 @@
 <html>
 <head>
 	<title>車の絵</title>
-	<style>
-		canvas {
-			background-color: #ffffff;
-		}
-	</style>
-</head>
-<body>
-	<canvas id="canvas"></canvas>
-	<script>
-		const canvas = document.getElementById('canvas');
-		const ctx = canvas.getContext('2d');
+<div class="car">
+  <div class="car-body"></div>
+  <div class="car-window"></div>
+  <div class="car-wheel"></div>
+  <div class="car-wheel"></div>
+</div>
 
-		ctx.fillStyle = '#f00'; // 赤
-		ctx.fillRect(50, 50, 150, 100); // 車体の描画
-
-		ctx.fillStyle = '#000'; // 黒
-		ctx.beginPath();
-		ctx.arc(100, 150, 25, 0, Math.PI * 2); // 左のタイヤの描画
-		ctx.fill();
-
-		ctx.beginPath();
-		ctx.arc(200, 150, 25, 0, Math.PI * 2); // 右のタイヤの描画
-		ctx.fill();
-	</script>
 </body>
 </html>
