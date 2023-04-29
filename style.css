@@ -20,12 +20,6 @@ body {
   margin: 0;
 }
 
-header nav {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20px;
-}
-
 dev {
   margin-left: 10px;
 }
@@ -49,7 +43,7 @@ header h1 {
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 20px;
 }
 
