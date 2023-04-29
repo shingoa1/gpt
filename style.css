@@ -20,6 +20,12 @@ body {
   margin: 0;
 }
 
+header nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
 dev {
   margin-left: 10px;
 }
