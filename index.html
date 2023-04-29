@@ -1,83 +1,62 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>私のブログ</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<title>My Blog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
+		<h1>My Blog</h1>
 		<nav>
 			<ul>
-				<li><a href="#">ホーム</a></li>
-				<li><a href="#">ブログ</a></li>
-				<li><a href="#">お問い合わせ</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
-		<div class="hero">
-			<h1>私のブログ</h1>
-			<p>Web開発に関する情報を発信しています</p>
-		</div>
 	</header>
 	<main>
-		<section>
-			<h2>最新記事</h2>
+		<section class="featured-post">
+			<article>
+				<a href="#">
+					<img src="https://placeimg.com/640/480/tech" alt="Featured Post">
+					<div class="overlay">
+						<h2>Featured Post</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</a>
+			</article>
+		</section>
+		<section class="posts">
 			<ul>
 				<li>
 					<a href="#">
-						<h3>Webサイト制作に必要なスキルとは？</h3>
-						<p>Webサイトを制作するために必要なスキルについて解説します。</p>
+						<img src="https://placeimg.com/640/480/tech" alt="Post">
+						<h3>Post Title 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<h3>HTMLの基礎知識</h3>
-						<p>HTMLの基礎知識について解説します。</p>
+						<img src="https://placeimg.com/640/480/tech" alt="Post">
+						<h3>Post Title 2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<h3>CSSの使い方</h3>
-						<p>CSSの使い方について解説します。</p>
+						<img src="https://placeimg.com/640/480/tech" alt="Post">
+						<h3>Post Title 3</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</a>
 				</li>
 			</ul>
 		</section>
-		<section>
-			<h2>人気記事</h2>
-			<ul>
-				<li>
-					<a href="#">
-						<h3>Webサイト制作に必要なスキルとは？</h3>
-						<p>Webサイトを制作するために必要なスキルについて解説します。</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<h3>HTMLの基礎知識</h3>
-						<p>HTMLの基礎知識について解説します。</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<h3>CSSの使い方</h3>
-						<p>CSSの使い方について解説します。</p>				
-			</li>
-		</ul>
-	</section>
-	<section>
-		<h2>カテゴリー</h2>
-		<ul>
-			<li><a href="#">HTML</a></li>
-			<li><a href="#">CSS</a></li>
-			<li><a href="#">JavaScript</a></li>
-		</ul>
-	</section>
-</main>
-<footer>
-	<p>© 2023 私のブログ</p>
-</footer>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Blog</p>
+	</footer>
 </body>
 </html>
