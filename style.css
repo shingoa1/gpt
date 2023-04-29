@@ -1,11 +1,8 @@
-/* 全体設定 */
-body {
+/* リセットCSS */
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 
 /* ヘッダー */
@@ -15,81 +12,64 @@ header {
   align-items: center;
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 1rem;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 2rem;
 }
 
-header nav {
-  display: flex;
-}
-
-header nav a {
+header a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  font-size: 1.5rem;
 }
 
-/* メインコンテンツ */
+/* メイン */
 main {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }
 
 .post {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(50% - 1rem);
+  margin-bottom: 2rem;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-out;
 }
 
-.post h2 {
-  font-size: 24px;
-  margin: 0 0 10px;
-}
-
-.post p {
-  font-size: 18px;
-  margin: 0;
+.post:hover {
+  transform: translateY(-5px);
 }
 
 .post img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
 }
 
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-  main {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  }
-  
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  header nav {
-    margin-top: 10px;
-  }
-  
-  header nav a {
-    display: block;
-    margin: 10px 0;
-  }
+.post h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
-  
+
+.post p {
+  padding: 1rem;
+}
+
 /* フッター */
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
   text-align: center;
+  padding: 1rem;
 }
 
+footer p {
+  font-size: 1.2rem;
+}
