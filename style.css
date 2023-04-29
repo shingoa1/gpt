@@ -284,3 +284,7 @@ section li {
     left: 100%;
   }
 }
+
+canvas {
+  border: 1px solid black;
+}
