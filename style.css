@@ -133,3 +133,8 @@ section li {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
+
+/* Javascript用 */
+#canvas {
+  border: 1px solid black;
+}
