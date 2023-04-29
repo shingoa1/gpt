@@ -1,125 +1,79 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
+/* 全体設定 */
 body {
-	font-family: 'Open Sans', sans-serif;
-	color: #333;
-	background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
 }
 
+/* ヘッダー */
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
 
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
 }
 
-nav ul {
-	list-style-type: none;
-	display: flex;
+header nav {
+  display: flex;
 }
 
-nav li {
-	margin-right: 20px;
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
-nav li:last-child {
-	margin-right: 0;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
-
-.hero {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	height: 400px;
-	background-image: url('hero.jpg');
-	background-position: center;
-	background-size: cover;
-}
-
-.hero h1 {
-	font-size: 50px;
-	margin-bottom: 20px;
-	text-shadow: 2px 2px #333;
-}
-
-.hero p {
-	font-size: 24px;
-	text-shadow: 2px 2px #333;
-}
-
+/* メインコンテンツ */
 main {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 50px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 40px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
-section {
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 20px;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+.post {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-section h2 {
-	font-size: 36px;
-	margin-bottom: 20px;
+.post:hover {
+  transform: translateY(-10px);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-section ul {
-	list-style-type: none;
+.post h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
 }
 
-section li {
-	margin-bottom: 20px;
+.post p {
+  font-size: 18px;
+  margin: 0;
 }
 
-section a {
-	color: #333;
-	text-decoration: none;
+.post img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-section h3 {
-	font-size: 24px;
-	margin-bottom: 10px;
-}
-
-section p {
-	font-size: 18px;
-}
-
+/* フッター */
 footer {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-}
-/* style.css */
-/* ... */
-ul li a img {
-	width: 100%;
-	height: auto;
-	transform: scale(1);
-	transition: all 0.3s ease-out;
-}
-ul li a:hover img {
-	transform: scale(1.1) rotate(180deg);
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
