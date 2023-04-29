@@ -112,3 +112,14 @@ footer {
 	padding: 20px;
 	text-align: center;
 }
+/* style.css */
+/* ... */
+ul li a img {
+	width: 100%;
+	height: auto;
+	transform: scale(1);
+	transition: all 0.3s ease-out;
+}
+ul li a:hover img {
+	transform: scale(1.1) rotate(180deg);
+}
