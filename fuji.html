@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>富士山</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="600" height="400"></canvas>
+
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+
+    // 塗りつぶし色を指定
+    context.fillStyle = "#FFFFFF";
+
+    // 山の背景を描画
+    context.fillRect(0, 0, canvas.width, canvas.height);
+
+    // 富士山を描画
+    // 山頂
+    context.beginPath();
+    context.moveTo(300, 50);
+    context.lineTo(250, 150);
+    context.lineTo(350, 150);
+    context.closePath();
+    context.fillStyle = "#C00";
+    context.fill();
+
+    // 山体
+    context.beginPath();
+    context.moveTo(100, 150);
+    context.lineTo(500, 150);
+    context.lineTo(300, 400);
+    context.closePath();
+    context.fillStyle = "#F00";
+    context.fill();
+  </script>
+</body>
+</html>
